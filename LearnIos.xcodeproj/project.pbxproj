@@ -13,7 +13,8 @@
 		A967F878219085F8009BF2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A967F877219085F8009BF2D4 /* Assets.xcassets */; };
 		A967F87B219085F8009BF2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A967F879219085F8009BF2D4 /* LaunchScreen.storyboard */; };
 		A967F886219085F8009BF2D4 /* LearnIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967F885219085F8009BF2D4 /* LearnIosTests.swift */; };
-		A967F891219085F8009BF2D4 /* LearnIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967F890219085F8009BF2D4 /* LearnIosUITests.swift */; };
+		A9D9F6FC2194584D00FC893C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9F6FB2194584D00FC893C /* Meal.swift */; };
+		A9DE787A2192E25200B2BADE /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE78792192E25200B2BADE /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,8 @@
 		A967F885219085F8009BF2D4 /* LearnIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnIosTests.swift; sourceTree = "<group>"; };
 		A967F887219085F8009BF2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A967F88C219085F8009BF2D4 /* LearnIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A967F890219085F8009BF2D4 /* LearnIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnIosUITests.swift; sourceTree = "<group>"; };
-		A967F892219085F8009BF2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D9F6FB2194584D00FC893C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		A9DE78792192E25200B2BADE /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +80,6 @@
 			children = (
 				A967F86F219085F7009BF2D4 /* LearnIos */,
 				A967F884219085F8009BF2D4 /* LearnIosTests */,
-				A967F88F219085F8009BF2D4 /* LearnIosUITests */,
 				A967F86E219085F7009BF2D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +99,8 @@
 			children = (
 				A967F870219085F7009BF2D4 /* AppDelegate.swift */,
 				A967F872219085F7009BF2D4 /* ViewController.swift */,
+				A9DE78792192E25200B2BADE /* RatingControl.swift */,
+				A9D9F6FB2194584D00FC893C /* Meal.swift */,
 				A967F874219085F7009BF2D4 /* Main.storyboard */,
 				A967F877219085F8009BF2D4 /* Assets.xcassets */,
 				A967F879219085F8009BF2D4 /* LaunchScreen.storyboard */,
@@ -114,15 +116,6 @@
 				A967F887219085F8009BF2D4 /* Info.plist */,
 			);
 			path = LearnIosTests;
-			sourceTree = "<group>";
-		};
-		A967F88F219085F8009BF2D4 /* LearnIosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A967F890219085F8009BF2D4 /* LearnIosUITests.swift */,
-				A967F892219085F8009BF2D4 /* Info.plist */,
-			);
-			path = LearnIosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D9F6FC2194584D00FC893C /* Meal.swift in Sources */,
 				A967F873219085F7009BF2D4 /* ViewController.swift in Sources */,
+				A9DE787A2192E25200B2BADE /* RatingControl.swift in Sources */,
 				A967F871219085F7009BF2D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A967F891219085F8009BF2D4 /* LearnIosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VRDP53FP7;
 				INFOPLIST_FILE = LearnIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VRDP53FP7;
 				INFOPLIST_FILE = LearnIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
