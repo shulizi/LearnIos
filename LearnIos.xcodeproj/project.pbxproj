@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A915D20B21954A9E0086E846 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915D20A21954A9E0086E846 /* MealTableViewCell.swift */; };
+		A915D20D219571E00086E846 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915D20C219571E00086E846 /* MealTableViewController.swift */; };
 		A967F871219085F7009BF2D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967F870219085F7009BF2D4 /* AppDelegate.swift */; };
-		A967F873219085F7009BF2D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967F872219085F7009BF2D4 /* ViewController.swift */; };
+		A967F873219085F7009BF2D4 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967F872219085F7009BF2D4 /* MealViewController.swift */; };
 		A967F876219085F7009BF2D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A967F874219085F7009BF2D4 /* Main.storyboard */; };
 		A967F878219085F8009BF2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A967F877219085F8009BF2D4 /* Assets.xcassets */; };
 		A967F87B219085F8009BF2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A967F879219085F8009BF2D4 /* LaunchScreen.storyboard */; };
@@ -32,12 +34,21 @@
 			remoteGlobalIDString = A967F86C219085F7009BF2D4;
 			remoteInfo = LearnIos;
 		};
+		A9DCF0B921946EA200352E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A967F865219085F7009BF2D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A967F86C219085F7009BF2D4;
+			remoteInfo = LearnIos;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A915D20A21954A9E0086E846 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		A915D20C219571E00086E846 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A967F86D219085F7009BF2D4 /* LearnIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A967F870219085F7009BF2D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A967F872219085F7009BF2D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A967F872219085F7009BF2D4 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		A967F875219085F7009BF2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A967F877219085F8009BF2D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A967F87A219085F8009BF2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		A967F887219085F8009BF2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A967F88C219085F8009BF2D4 /* LearnIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D9F6FB2194584D00FC893C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		A9DCF0B421946EA200352E92 /* LearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE78792192E25200B2BADE /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9DCF0B121946EA200352E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +109,7 @@
 				A967F86D219085F7009BF2D4 /* LearnIos.app */,
 				A967F881219085F8009BF2D4 /* LearnIosTests.xctest */,
 				A967F88C219085F8009BF2D4 /* LearnIosUITests.xctest */,
+				A9DCF0B421946EA200352E92 /* LearnUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,9 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				A967F870219085F7009BF2D4 /* AppDelegate.swift */,
-				A967F872219085F7009BF2D4 /* ViewController.swift */,
-				A9DE78792192E25200B2BADE /* RatingControl.swift */,
 				A9D9F6FB2194584D00FC893C /* Meal.swift */,
+				A9DE78792192E25200B2BADE /* RatingControl.swift */,
+				A915D20A21954A9E0086E846 /* MealTableViewCell.swift */,
+				A967F872219085F7009BF2D4 /* MealViewController.swift */,
+				A915D20C219571E00086E846 /* MealTableViewController.swift */,
 				A967F874219085F7009BF2D4 /* Main.storyboard */,
 				A967F877219085F8009BF2D4 /* Assets.xcassets */,
 				A967F879219085F8009BF2D4 /* LaunchScreen.storyboard */,
@@ -174,12 +196,31 @@
 			productReference = A967F88C219085F8009BF2D4 /* LearnIosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A9DCF0B321946EA200352E92 /* LearnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DCF0BD21946EA200352E92 /* Build configuration list for PBXNativeTarget "LearnUITests" */;
+			buildPhases = (
+				A9DCF0B021946EA200352E92 /* Sources */,
+				A9DCF0B121946EA200352E92 /* Frameworks */,
+				A9DCF0B221946EA200352E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DCF0BA21946EA200352E92 /* PBXTargetDependency */,
+			);
+			name = LearnUITests;
+			productName = LearnUITests;
+			productReference = A9DCF0B421946EA200352E92 /* LearnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A967F865219085F7009BF2D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "杜李";
@@ -192,6 +233,10 @@
 						TestTargetID = A967F86C219085F7009BF2D4;
 					};
 					A967F88B219085F8009BF2D4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A967F86C219085F7009BF2D4;
+					};
+					A9DCF0B321946EA200352E92 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = A967F86C219085F7009BF2D4;
 					};
@@ -213,6 +258,7 @@
 				A967F86C219085F7009BF2D4 /* LearnIos */,
 				A967F880219085F8009BF2D4 /* LearnIosTests */,
 				A967F88B219085F8009BF2D4 /* LearnIosUITests */,
+				A9DCF0B321946EA200352E92 /* LearnUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +288,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9DCF0B221946EA200352E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D9F6FC2194584D00FC893C /* Meal.swift in Sources */,
-				A967F873219085F7009BF2D4 /* ViewController.swift in Sources */,
+				A967F873219085F7009BF2D4 /* MealViewController.swift in Sources */,
 				A9DE787A2192E25200B2BADE /* RatingControl.swift in Sources */,
 				A967F871219085F7009BF2D4 /* AppDelegate.swift in Sources */,
+				A915D20D219571E00086E846 /* MealTableViewController.swift in Sources */,
+				A915D20B21954A9E0086E846 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +326,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9DCF0B021946EA200352E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -283,6 +345,11 @@
 			isa = PBXTargetDependency;
 			target = A967F86C219085F7009BF2D4 /* LearnIos */;
 			targetProxy = A967F88D219085F8009BF2D4 /* PBXContainerItemProxy */;
+		};
+		A9DCF0BA21946EA200352E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A967F86C219085F7009BF2D4 /* LearnIos */;
+			targetProxy = A9DCF0B921946EA200352E92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,6 +603,44 @@
 			};
 			name = Release;
 		};
+		A9DCF0BB21946EA200352E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VRDP53FP7;
+				INFOPLIST_FILE = LearnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LearnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnIos;
+			};
+			name = Debug;
+		};
+		A9DCF0BC21946EA200352E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VRDP53FP7;
+				INFOPLIST_FILE = LearnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LearnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnIos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +676,15 @@
 			buildConfigurations = (
 				A967F89C219085F8009BF2D4 /* Debug */,
 				A967F89D219085F8009BF2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DCF0BD21946EA200352E92 /* Build configuration list for PBXNativeTarget "LearnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DCF0BB21946EA200352E92 /* Debug */,
+				A9DCF0BC21946EA200352E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
