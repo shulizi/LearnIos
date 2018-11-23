@@ -16,7 +16,8 @@ class MealTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Use the edit button item provided by the table view controller.
-        navigationItem.leftBarButtonItem = editButtonItem
+        navigationItem.rightBarButtonItem = editButtonItem
+        
         tableView.rowHeight = 100
         // Load any saved meals, otherwise load sample data.
         if let savedMeals = loadMeals() {
@@ -60,22 +61,6 @@ class MealTableViewController: UITableViewController {
         }
         meals += [meal1,meal2,meal3]
     }
-    private func saveMeals(){
-        //concurrent async
-        let secondQueue = DispatchQueue(label: "queue", qos: .utility, attributes: .concurrent)
-        secondQueue.async {
-            do {
-                let writeData = try NSKeyedArchiver.archivedData(withRootObject: self.meals, requiringSecureCoding: false)
-                try writeData.write(to: Meal.ArchiveURL)
-                os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
-            } catch {
-                os_log("Failed to save meals...", log: OSLog.default, type: .error)
-            }
-        }
-        secondQueue.activate()
-        
-        
-    }
     
     
     
@@ -116,7 +101,6 @@ class MealTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             meals.remove(at: indexPath.row)
-            saveMeals()
             tableView.deleteRows(at: [indexPath], with: .fade)
             
         } else if editingStyle == .insert {
@@ -131,58 +115,6 @@ class MealTableViewController: UITableViewController {
     }
     
     
-    
-
-    
-    
-    
-    //MARK: Actions
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
-        
-        if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal{
-            if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                // Update an existing meal.
-                meals[selectedIndexPath.row] = meal
-                tableView.reloadRows(at: [selectedIndexPath], with: .none)
-            }
-            else {
-                //Add a new meal
-                let newIndexPath = IndexPath(row: meals.count, section: 0)
-                meals.append(meal)
-                tableView.insertRows(at: [newIndexPath], with: .automatic)
-            }
-            // Save the meals.
-            saveMeals()
-            
-        }
-    }
-    
-    //MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        switch segue.identifier ?? "" {
-        case "AddItem":
-            os_log("Adding a new meal.",log: OSLog.default,type: .debug)
-        case "ShowDetail":
-            guard let mealDetailViewController = segue.destination as? MealViewController else {
-                fatalError("Unexpected destination: \(segue.destination)")
-            }
-            
-            guard let selectedMealCell = sender as? MealTableViewCell else {
-                fatalError("Unexpected sender: \(String(describing: sender))")
-            }
-            
-            guard let indexPath = tableView.indexPath(for: selectedMealCell) else {
-                fatalError("The selected cell is not being displayed by the table")
-            }
-            
-            let selectedMeal = meals[indexPath.row]
-            mealDetailViewController.meal = selectedMeal
-        default:
-            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
-        }
-    }
-   
     
 
 }
